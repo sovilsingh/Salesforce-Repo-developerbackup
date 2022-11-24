@@ -1,0 +1,10 @@
+<apex:page controller="CL_INT_1AUG2022_XMLDynamicAccCon">
+    <apex:form >
+  <apex:pageBlock >
+    <apex:pageBlockSection >
+        <apex:inputText value="{!xmlstring}" id="rr" size="200"/>
+        <apex:commandButton value="Convert" action="{!CreateXMl}" reRender="rr"/>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

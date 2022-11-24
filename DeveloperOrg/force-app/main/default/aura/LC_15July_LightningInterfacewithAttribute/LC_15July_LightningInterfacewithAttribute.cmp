@@ -1,0 +1,16 @@
+<aura:component implements="c:LI_15July_LightningInterfacewithAttribute" >
+	<lightning:card title="Interface Example">
+      Name : {!v.empname} <p></p>
+      age : {!v.empage} <p></p>     
+      Dob : {!v.empdob}  <p></p>
+      Phone : {!v.empphone}  <p></p>
+      Email : {!v.empemail}  <p></p>
+    </lightning:card>
+    <lightning:card title="Emp Details">
+        <lightning:input label="Employee Name" value="{!v.empname}"/>
+        <lightning:input label="Employee Age" value="{!v.empage}"/>
+        <lightning:input label="Employee Dob" value="{!v.empdob}"/>
+         <lightning:input label="Employee Phone" value="{!v.empphone}"/>
+         <lightning:input label="Employee Email" value="{!v.empemail}"/>
+    </lightning:card>
+</aura:component>

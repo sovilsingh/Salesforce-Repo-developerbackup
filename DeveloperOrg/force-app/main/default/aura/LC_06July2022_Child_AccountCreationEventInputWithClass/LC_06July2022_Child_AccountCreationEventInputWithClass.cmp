@@ -1,0 +1,13 @@
+<aura:component controller="CL_06July2022_AccountCreation">
+    <aura:attribute name="newAccount" type="Account" default="{sObject:'Account'}"/>
+    <aura:registerEvent name="eventcreate" type="c:LE_06July2022_AccountCreationEvent" />
+    <lightning:card title="Create Account">
+        <aura:set attribute="actions">
+            <lightning:button label="Save" onclick="{!c.saveme}"/>
+            <lightning:button label="Clear" onclick="{!c.clearme}"/>
+        </aura:set>   
+        <lightning:input label="Account Name" value = "{!v.newAccount.Name}"/>
+        <lightning:input label="Account Phone" value = "{!v.newAccount.Phone}"/>
+        <lightning:input label="Account Rating" value = "{!v.newAccount.Rating}"/>
+    </lightning:card>
+</aura:component>

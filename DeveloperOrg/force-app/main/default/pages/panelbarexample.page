@@ -1,0 +1,7 @@
+<apex:page >
+ <apex:panelBar >
+ <apex:panelBarItem label="Iteam" onenter="alert('Entering item 1');" onleave="alert('Leaving Item 1');">First Item</apex:panelBarItem>
+  <apex:panelBarItem label="Iteam2" onenter="alert('Entering item 2');" onleave="alert('Leaving Item 2');">second Item</apex:panelBarItem>
+   <apex:panelBarItem label="Iteam3">Third Item</apex:panelBarItem>
+ </apex:panelBar>
+</apex:page>

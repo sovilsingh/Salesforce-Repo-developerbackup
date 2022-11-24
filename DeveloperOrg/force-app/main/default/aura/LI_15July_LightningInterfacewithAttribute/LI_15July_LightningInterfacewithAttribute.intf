@@ -1,0 +1,7 @@
+<aura:interface description="Interface template">
+	<aura:attribute name="empname" type="String"/>
+    <aura:attribute name="empage" type="Integer" default="35"/>
+    <aura:attribute name="empdob" type="Date"/>
+    <aura:attribute name="empphone" type="String"/>
+    <aura:attribute name="empemail" type="String"/>
+</aura:interface>

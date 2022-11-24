@@ -1,0 +1,6 @@
+<aura:tokens  extends="c:LT_17July2022_MyLightningTokenTwo">
+    <aura:token name="MPRSBRcolour" value="#F231B8"/>
+    <aura:token name="MPRSBordercolour" value="#0bf115"/>
+    <aura:token name="MPRSHeadercolour" value="#1477EF"/>
+    <aura:token name="MPRSBorderStyle" value="#dotted"/>
+</aura:tokens>

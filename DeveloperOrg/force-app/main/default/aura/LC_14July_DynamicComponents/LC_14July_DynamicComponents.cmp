@@ -1,0 +1,5 @@
+<aura:component >
+    <lightning:button label="Create Compoents" variant="brand" onclick="{!c.createcomp}"/>
+    <p>{!v.body}</p>
+    <lightning:button label="Destroy Compoents" variant="destructive" onclick="{!c.descomp}"/>
+</aura:component>

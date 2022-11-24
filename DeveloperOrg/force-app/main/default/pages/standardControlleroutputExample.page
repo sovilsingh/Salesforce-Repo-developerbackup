@@ -1,0 +1,11 @@
+<apex:page StandardController="Account">
+  <apex:pageblock title="Custom Output">
+   <apex:pageBlockSection title="Custom Section title">
+   
+   <apex:outputField value="{!Account.Name}"/>
+   <apex:outputField value="{!Account.Owner.Name}"/>
+   <apex:outputField value="{!Account.Phone}"/>
+   
+   </apex:pageBlockSection>
+  </apex:pageblock>
+</apex:page>

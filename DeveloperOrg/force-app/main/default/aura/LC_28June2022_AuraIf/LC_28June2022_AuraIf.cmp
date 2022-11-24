@@ -1,0 +1,28 @@
+<aura:component >
+    <aura:attribute name="rate" type="Decimal"/>
+    <aura:attribute name="term"  type="Decimal"/>
+    <aura:attribute name="pri"  type="Decimal"/>
+    <aura:attribute name="res"  type="Decimal"/>
+    
+    <aura:attribute  name="flag" type="Boolean" default="true"/>
+    <lightning:card title="SI Calculator" class="card">
+        
+     <aura:set attribute = "actions">
+         <lightning:button label="Submit" onclick="{!c.Callme}" class="button"/>
+        </aura:set>
+        <lightning:input label="Enter the Amount" value="{!v.pri}"/>
+        <lightning:input label="Enter the no of years" value="{!v.term}"/>
+        <lightning:input label="Enter the Rate of Interest" value="{!v.rate}"/>
+    </lightning:card>
+    <aura:if isTrue="{!v.flag}">
+        <div class="logo">
+            <img src="{!$Resource.logo}"/>
+        </div>
+    <div class="Box">
+        Amount : {!v.pri} <br/>
+       Years  : {!v.term} <br/>
+       Rate   : {!v.rate} <br/>
+       Interest Amount : {!v.res}
+    </div>
+     </aura:if>
+</aura:component>

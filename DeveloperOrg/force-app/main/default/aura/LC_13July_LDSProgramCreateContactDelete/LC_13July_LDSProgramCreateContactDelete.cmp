@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="acc" type="object" />
+    <aura:attribute name="recerror" type="String" />
+    
+	<force:recordData aura:id="accdel"
+                      recordId="{!v.recordId}"
+                      fields="Name, Description, Phone, Industry, Rating"
+                      targetFields="{!v.acc}"
+                      targetError="{!v.recerror}"/>    
+   
+ 
+        <lightning:button label="Delete" onclick="{!c.deleteme}" variant="destructive"/>
+   
+    
+</aura:component>

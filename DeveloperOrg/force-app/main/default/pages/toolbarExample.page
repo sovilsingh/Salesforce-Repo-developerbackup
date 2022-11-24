@@ -1,0 +1,17 @@
+<apex:page id="thePage">
+<apex:toolbar id="TheToolBar" >
+ <apex:outputText Value="Sample Toolbar"></apex:outputText>
+ 
+  <apex:toolbarGroup itemSeparator="line" id="TheToolBarlinks">
+  <apex:outputLink value="https://www.salesforce.com/">Salesforce</apex:outputLink>
+  <apex:outputLink value="https://www.xyz/">xyz</apex:outputLink>
+  </apex:toolbarGroup>
+  
+  <apex:toolbarGroup itemSeparator="line" location="right" id="toolbar2">
+  <apex:form >
+  <apex:inputText id="TheInputText">Enter Text</apex:inputText>
+  <apex:commandButton value="Search" id="theCommandlink"/>
+  </apex:form>
+  </apex:toolbarGroup>
+</apex:toolbar>
+</apex:page>

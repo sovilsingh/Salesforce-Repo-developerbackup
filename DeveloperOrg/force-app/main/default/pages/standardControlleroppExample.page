@@ -1,0 +1,20 @@
+<apex:page standardController="Opportunity">
+<apex:form >
+<apex:pageBlock title="Opportunity Block">
+<apex:pageBlockSection Title="Opportunity Input Section">
+<apex:inputField label="Name" value="{!opportunity.Name}"/>
+<apex:inputField label="CloseDate" value="{!opportunity.CloseDate}"/>
+<apex:inputField label="Stage" value="{!opportunity.StageName}"/>
+</apex:pageBlockSection>
+<apex:pageBlockSection Title="Opportunity OutPut Section">
+<apex:outputField label="Name" value="{!opportunity.Name}"/>
+<apex:outputField label="CloseDate" value="{!opportunity.CloseDate}"/>
+<apex:outputField label="Stage" value="{!opportunity.StageName}"/>
+</apex:pageBlockSection>
+<apex:pageBlockButtons >
+<apex:commandButton value="Delete this Record" action="{!delete}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

@@ -1,0 +1,3 @@
+<aura:component >
+    <lightning:button label="Call" onclick="{!c.callme}"/>
+</aura:component>

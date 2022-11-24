@@ -1,0 +1,4 @@
+<aura:tokens extends="c:LT_17July2022_MyLightningToken">
+    <aura:token name="Margin" value="100px"/>
+     <aura:token name="Padding" value="10px"/>
+</aura:tokens>

@@ -1,0 +1,5 @@
+<aura:component extends="c:LC_21July_InhertComponentParent">
+    <!--<aura:attribute name="name" type="String" /> 
+     <lightning:input value="{!v.empname}" /> -->
+    {!v.empname}
+</aura:component>

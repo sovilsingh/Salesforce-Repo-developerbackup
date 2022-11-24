@@ -1,0 +1,7 @@
+<aura:component implements="c:LI_16July_InterfaceWithEvents" >
+     <c:LC_16July_InterfaceWithEventsCompTwo />
+    <lightning:card title="Component three - fire only ">
+	 <lightning:button label="Submit" onclick="{!c.callme}"/>
+        </lightning:card>
+    
+</aura:component>

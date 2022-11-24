@@ -1,0 +1,6 @@
+<apex:page controller="CL_INT_XML_DES_File_29July2022">
+    <apex:form >
+    <apex:inputFile value="{!xmlfile}" fileName="dummyfile"></apex:inputFile>
+        <apex:commandButton value="Click Here to import" action="{!callme}"/>
+    </apex:form>
+</apex:page>

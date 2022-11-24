@@ -1,0 +1,11 @@
+<apex:page controller="AccountCustomController" >
+<apex:form >
+<apex:pageBlock title="Congratulation {!$User.FirstName}">
+
+You Belong to the Account Name : <apex:InputField value="{!account.Name}"/>
+
+<apex:commandButton action="{!Savetherecord}" value="Save"/>
+
+</apex:pageBlock>
+</apex:form>
+</apex:page>

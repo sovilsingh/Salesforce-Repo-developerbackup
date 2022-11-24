@@ -1,0 +1,8 @@
+.THIS.one 
+{
+    margin-top:token(Margin);
+    margin-left:token(Margin);
+    color:token(MPRSBRcolour);
+    border-color:token(MPRSBordercolour);
+    border-style:token(MPRSBorderStyle);
+}

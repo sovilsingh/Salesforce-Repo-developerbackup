@@ -1,0 +1,47 @@
+<apex:page >
+    <apex:includeLightning />
+  <!-- <div id="one"></div> -->
+    
+      <apex:form >
+<apex:pageBlock title="Employee Details">
+    <apex:pageBlockSection >
+    <apex:PageBlockSectionItem >
+        <apex:outputLabel value="Enter Emp Name"/>
+        <apex:inputText />
+        </apex:PageBlockSectionItem>
+       <apex:PageBlockSectionItem >
+        <apex:outputLabel value="Enter Emp Salary"/>
+        <apex:inputText />
+        </apex:PageBlockSectionItem>
+         <apex:PageBlockSectionItem >
+        <apex:outputLabel value="Enter Emp City"/>
+        <apex:inputText />
+        </apex:PageBlockSectionItem>
+        <apex:commandButton value="Submit"/>
+        </apex:pageBlockSection>
+    <apex:pageBlockSection title="Account Details">
+         <div id="two">
+    </div>
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+        </apex:form>
+    
+    <script>
+     $Lightning.use("c:LA_21July2022_LightningCreateComp", function() {
+         $Lightning.createComponent("c:LC_06July2022_Parent_AccountCreationEventInputWithClass",
+                                    {}, 
+                                    "one",
+                                    function(cmp){}
+                                   );
+     });
+    
+      $Lightning.use("c:LA_21July2022_LightningCreateComp", function() {
+         $Lightning.createComponent("c:LC_06July2022_Parent_AccountCreationEventInputWithClass",
+                                    {}, 
+                                    "two",
+                                    function(cmp){}
+                                   );
+     });
+    </script>
+    
+</apex:page>

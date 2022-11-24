@@ -1,0 +1,6 @@
+<apex:page id="thepage">
+<apex:tabPanel switchType="client">
+<apex:tab Label="Home" name="home1" id="tabone">tab one here</apex:tab>
+<apex:tab Label="Home2" name="home2" id="tabtwo">tab second here</apex:tab>
+</apex:tabPanel>
+</apex:page>

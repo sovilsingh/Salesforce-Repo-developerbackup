@@ -1,0 +1,8 @@
+<aura:component implements="c:LI_15July_LightningInterfacewithMethod">
+    <aura:attribute name ="empname" type="String"/>
+    <aura:attribute name ="empcity" type="String"/>
+    <lightning:card title="Action Overides Example">
+     Name Entered : {!v.empname}<p></p>
+     City Entered : {!v.empcity}<p></p>
+    </lightning:card>
+</aura:component>

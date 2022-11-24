@@ -1,0 +1,3 @@
+<aura:component controller="CL_June2022_CreateAccount">
+    <lightning:button label="Create Account" onclick="{!c.callme}"/>
+</aura:component>

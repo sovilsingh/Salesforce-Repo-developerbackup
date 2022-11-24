@@ -1,0 +1,14 @@
+<aura:component controller="Cl_12July_EventApplicationAccConOpp" >
+	<aura:attribute name="data" type="Object" />
+    <aura:attribute name="colums" type="List" />
+    <aura:attribute name="flag" type="boolean" default="false" />
+    
+    <aura:handler event="c:LE_12July_AppEventAccConOpp" action="{!c.callme}"/>
+    
+    <aura:if isTrue="{!v.flag}">
+    
+        <lightning:dataTable keyField="id" data="{!v.data}" columns="{!v.colums}"/>
+        
+    </aura:if>
+    
+</aura:component>

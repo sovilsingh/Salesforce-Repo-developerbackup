@@ -1,0 +1,4 @@
+<aura:component >
+    <c:LC_14July_ActionOveride_Child aura:id="child"/>
+    <lightning:button label="Submit" onclick="{!c.show}"/>
+</aura:component>

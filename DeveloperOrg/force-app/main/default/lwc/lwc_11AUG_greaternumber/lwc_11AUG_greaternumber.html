@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Greater 3 Number">
+   <lightning-input label="Enter First Number" onchange={firstnum} value={Num1}></lightning-input>
+    <lightning-input label="Enter Second Number" onchange={secondnum} value={Num2}></lightning-input>
+    <lightning-input label="Enter Third Number" onchange={thirdnum} value={Num3}></lightning-input>
+    <!--   <lightning-input label="Enter First Number" value={Num1}></lightning-input>
+    <lightning-input label="Enter Second Number"  value={Num2}></lightning-input>
+    <lightning-input label="Enter Third Number"  value={Num3}></lightning-input> -->
+    <lightning-button-group>
+        <lightning-button label="Calculate" onclick={calculateme}></lightning-button>
+        <lightning-button label="Clear" onclick={clearme}></lightning-button>
+    </lightning-button-group>
+    </lightning-card>
+
+    <lightning-card title="Greater 3 Number">
+        <lightning-input label="Enter First Number" onchange={captureData} value={Num1} name="aval"></lightning-input>
+         <lightning-input label="Enter Second Number" onchange={captureData} value={Num2} name="bval"></lightning-input>
+         <lightning-input label="Enter Third Number" onchange={captureData} value={Num3} name="cval" ></lightning-input>
+         <!--   <lightning-input label="Enter First Number" value={Num1}></lightning-input>
+         <lightning-input label="Enter Second Number"  value={Num2}></lightning-input>
+         <lightning-input label="Enter Third Number"  value={Num3}></lightning-input> -->
+         <lightning-button-group>
+             <lightning-button label="Calculate2" onclick={calculateme}></lightning-button>
+             <lightning-button label="Clear2" onclick={clearme}></lightning-button>
+         </lightning-button-group>
+         </lightning-card>
+</template>

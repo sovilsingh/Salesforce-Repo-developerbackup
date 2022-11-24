@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:registerEvent name = "CustomEvent"  type="c:LE_10July_ApplicationEvent" />
+    <lightning:card title="Child 1">
+    <lightning:button label="Submit" onclick="{!c.callme}"/>
+        <c:LA_10July_GrandchildOne_ApplicationEvent />
+    </lightning:card>          
+</aura:component>

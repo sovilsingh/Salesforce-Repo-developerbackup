@@ -1,0 +1,39 @@
+<apex:page >
+    <apex:includeLightning />
+    <apex:form >
+<apex:pageBlock title="Employee Details">
+    <apex:pageBlockSection >
+    <apex:PageBlockSectionItem >
+        <apex:outputLabel value="Enter Emp Name"/>
+        <apex:inputText />
+        </apex:PageBlockSectionItem>
+       <apex:PageBlockSectionItem >
+        <apex:outputLabel value="Enter Emp Salary"/>
+        <apex:inputText />
+        </apex:PageBlockSectionItem>
+         <apex:PageBlockSectionItem >
+        <apex:outputLabel value="Enter Emp City"/>
+        <apex:inputText />
+        </apex:PageBlockSectionItem>
+        <apex:commandButton value="Submit"/>
+         <div id="one">
+    </div>
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+        </apex:form>
+<script>
+    $Lightning.use("c:LA_18July2022_VF", function(){
+    $Lightning.createComponent(
+                     "lightning:button",
+{"label":"Submit", "variant":"Success", "iconName":"standard:account"},
+        "one",
+        
+        function(cmp){
+            
+            alert("Lightning Button Created");
+        }
+    )
+    
+    });
+    </script>
+</apex:page>

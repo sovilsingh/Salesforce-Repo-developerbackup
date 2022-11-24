@@ -1,0 +1,6 @@
+<aura:component implements="c:LI_16July_InterfaceWithEvents">
+    <aura:handler name="InterfaceEvent" event="c:LE_16July_InterfaceWithEvents" action="{!c.show}"/>
+   <lightning:card title="Component one - Fire and Handel">
+    <lightning:button label="Submit" onclick="{!c.callme}"/>
+       </lightning:card>
+</aura:component>

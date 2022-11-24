@@ -1,0 +1,3 @@
+<aura:component implements="c:LI_15July_LightningInterfacewithMethod">
+    <lightning:button label="Submit" onclick="{!c.show}"/>
+</aura:component>

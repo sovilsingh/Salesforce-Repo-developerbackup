@@ -1,0 +1,8 @@
+<apex:page controller="CL_INT_JSON_PSAR_26July">
+    <apex:form >
+    <apex:dataTable value="{!Result}" var="a" cellpadding="10" frame="border">
+        <apex:column value="{!a}" headerValue="Key"/>
+         <apex:column value="{!Result[a]}" headerValue="Token"/>
+        </apex:dataTable>
+    </apex:form>
+</apex:page>

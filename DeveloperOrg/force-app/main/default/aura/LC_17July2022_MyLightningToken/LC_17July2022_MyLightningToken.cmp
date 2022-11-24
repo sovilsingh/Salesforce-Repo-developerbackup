@@ -1,0 +1,5 @@
+<aura:component >
+	<div class="one">
+        This is lightning token component
+    </div>
+</aura:component>

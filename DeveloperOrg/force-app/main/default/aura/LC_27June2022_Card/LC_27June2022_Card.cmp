@@ -1,0 +1,25 @@
+<aura:component >
+	<lightning:card iconName="standard:account">
+        <aura:set attribute="actions">
+            <lightning:button label="Follow" iconName="utility:add"/>
+            <lightning:buttonGroup>
+                <lightning:button label="New Contact"/>
+            <lightning:button label="New Case" />
+            <lightning:button label="New Note"/>
+            </lightning:buttonGroup>
+            <lightning:buttonMenu alternativeText="Menu">
+                <lightning:menuItem label="New Opportunity" value="nopp"/>
+            </lightning:buttonMenu>
+        </aura:set>
+        <aura:set attribute="title">
+              Account
+            <h1> Burlington Textiles Corp of America</h1>
+        </aura:set>
+        
+        Type : 
+        
+        phone :
+        
+        Website  :
+    </lightning:card>
+</aura:component>

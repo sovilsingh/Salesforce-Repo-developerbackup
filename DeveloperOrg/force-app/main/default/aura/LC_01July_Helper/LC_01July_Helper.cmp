@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="name" type="String" default="Sovil"/>
+    <aura:attribute name="msg1" type="String"/>
+    <aura:attribute name="msg2" type="String"/>
+    <aura:attribute name="msg3" type="String"/>
+    
+    <lightning:button label="Good Morning" onclick="{!c.gm}"/>
+    <lightning:button label="Good Night" onclick="{!c.gn}"/>
+    <p></p>  Message : {!v.name}<p></p> {!v.msg1} <p></p> {!v.msg2} <p></p> {!v.msg3} <p></p>
+</aura:component>

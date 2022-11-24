@@ -1,0 +1,10 @@
+<aura:component implements="c:LI_16July_InterfaceWithEvents" >
+    <c:LC_16July_InterfaceWithEventsCompThree />
+      <aura:attribute name ="en" type="String" />
+	 <aura:handler name="InterfaceEvent" event="c:LE_16July_InterfaceWithEvents" action="{!c.show}"/>
+    <lightning:card title="Component Four -- only handel">
+    
+        The Employee name is {!v.en}
+    
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,5 @@
+<aura:tokens>
+    <aura:token name="FontStyle" value="italic"/>
+    <aura:token name="FontSize" value="30px"/>
+    <aura:token name="FontFamily" value="Lucida Console"/>
+</aura:tokens>

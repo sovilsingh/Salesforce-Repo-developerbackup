@@ -1,0 +1,7 @@
+<aura:component >
+	<aura:attribute name="msg" type="String"/>
+    <aura:handler event="c:LE_10July_ApplicationEvent" action="{!c.showmetooo}"/>
+     <lightning:card title ="GrandChild 2">
+        GrandChild 2 : {!v.msg}
+    </lightning:card>
+</aura:component>

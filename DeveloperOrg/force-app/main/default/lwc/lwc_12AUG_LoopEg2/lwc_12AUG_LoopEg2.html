@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Simple array">
+        <template for:each={evnnum} for:item=ev>
+            <p key={ev}>{ev}</p>
+        </template>
+    
+    =======================
+    <template iterator:it={evnnum}>
+        <p key={it.value}>{it.value}</p>
+    </template>
+</lightning-card>
+=======================
+<lightning-card title="Complex Sinle Json Data">
+ Student Name : {Student.Name}  <p></p>
+ Student Age : {Student.Age} <p></p>
+ Student City : {Student.City} <p></p>
+ Student Salary : {Student.Salary} <p></p>
+</lightning-card>
+=======================
+<lightning-card title="Complex multiple Json Data">
+ <template iterator:it={Students}>
+<p key={it.value.Name}>Student Name :{it.value.Name}</p>
+<p key={it.value.Age}> Student Age :{it.value.Age}</p>
+<p key={it.value.City}>Student City :{it.value.City}</p>
+<p key={it.value.Salary}>Student Salary :{it.value.Salary}</p>
+==============================================================
+</template>
+</lightning-card>
+</template>

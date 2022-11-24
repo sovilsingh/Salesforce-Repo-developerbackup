@@ -1,0 +1,19 @@
+<aura:component controller="CL_29June2022_RetriveData" >
+    <aura:attribute name = "acc" type="Account"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.showme}"/>
+    
+    <lightning:card  iconName="standard:account">
+        
+        <aura:set attribute="title">
+            <p>Acount</p>
+            <h1>{!v.acc.Name}</h1>
+        </aura:set>
+        
+         <aura:set attribute="actions">
+            <lightning:button label =  "New Contact"/>
+            <lightning:button label = "New Case"/>
+           <lightning:button label = "New New Note" onclick="{!c.callme}"/>
+         </aura:set>
+    </lightning:card>
+</aura:component>

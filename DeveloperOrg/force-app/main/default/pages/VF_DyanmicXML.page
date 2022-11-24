@@ -1,0 +1,3 @@
+<apex:page controller="CL_INT_1AUG2022_XMLDynamic">
+    {!xmlString}
+</apex:page>

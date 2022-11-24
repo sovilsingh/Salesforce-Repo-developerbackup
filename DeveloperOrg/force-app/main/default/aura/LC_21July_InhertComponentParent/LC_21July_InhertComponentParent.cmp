@@ -1,0 +1,5 @@
+<aura:component extensible="true">
+    <aura:attribute name="empname" type="String" default="Hello"/>
+     {!v.empname}
+   <!-- <c:LC_21July_InhertComponentChild name="{!v.empname}"/> -->
+</aura:component>

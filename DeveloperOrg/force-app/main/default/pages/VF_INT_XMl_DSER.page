@@ -1,0 +1,15 @@
+<apex:page controller="CL_INT_XML3_DESER_29July2022" >
+    <apex:form >
+    <apex:pageBlock title="Simple De- Seri">
+        <apex:panelGrid columns="3" width="600">
+            <apex:inputTextArea rows="6" cols="100" value="{!xmlstring}"/>
+           
+            <apex:panelGrid columns="1">
+            <apex:commandButton value="Convert" action="{!convertMe}" reRender=""/>
+            </apex:panelGrid>
+            <apex:inputTextArea rows="6" cols="100" value="{!parsedata}"/>            
+            
+        </apex:panelGrid>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

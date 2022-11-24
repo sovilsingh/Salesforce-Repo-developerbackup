@@ -1,0 +1,12 @@
+<aura:component implements="c:LI_15July_LightningInterfacewithMethod">
+    <aura:attribute name="name" type="String"/>
+    <aura:attribute name="city" type="String"/>
+    
+    <c:LA_15July_LightningInterfacewithMethodThree aura:id="three"/>
+    
+    <lightning:button label="Submit" onclick="{!c.showme}" />
+    
+        <lightning:input label="Employe Name" value="{!v.name}"/>
+        <lightning:input label="Employe city" value="{!v.city}"/>     
+        
+</aura:component>
