@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fees_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Fees_Paid__c , &quot;No&quot;)</errorConditionFormula>
+    <errorDisplayField>Fees_Paid__c</errorDisplayField>
+    <errorMessage>first pay the Fees</errorMessage>
+</ValidationRule>
